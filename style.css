@@ -11,17 +11,65 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
     background-color: lightblue;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+
+
+}
+
+.header-left {
+
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+.game-search-container {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#game-search-box {
+    width: 350px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+#Welcome-header {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+
+#description-container {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.special-desc-text {
+    color: seagreen;
+    background color: black;
+    font-size: larger;
 }
 
 .stats-container {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
 .stats-container:hover {
@@ -40,6 +88,12 @@ body {
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+}
+
+#search-description {
+    text-align: center;
+    font-size: 25px;
+
 }
 
 #games-container {

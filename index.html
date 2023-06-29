@@ -4,19 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+      <script src="games.js" type="module" defer></script>
+      <script src="index.js" type="module" defer></script>
   </head>
 
   <body>
     <!-- header row with logo -->
     <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
-        <h1 class="header-text">Sea Monster Crowdfunding</h1>
+        <div class = "header-left">
+            <img id="tentacles" src="assets/tentacles.png">
+            <h1 class="header-text" >Sea Monster Crowdfunding</h1>
+        </div>
+<!--Search Box-->
+        <div class = "game-search-container">
+
+            <input type="text" id="game-search-box" placeholder="Enter a game title">
+            <button class = "game-search-button" id = "gameSearch-button">🔍</button>
+        </div>
+
     </div>
 
     <!-- background info about company -->
-    <h2>Welcome to Sea Monster!</h2>
+    <h2 id = "Welcome-header">Welcome to Sea Monster!</h2>
     <div id="description-container">
         <p>The purpose of our company is to fund independent games. We've been in operation for 12 years.</p>
+
     </div>
 
     <!-- top games & other interesting stats -->
@@ -49,7 +61,7 @@
 
     <!-- list of games funded by Sea Monster -->
     <h2>Our Games</h2>
-    <p>Check out each of our games below!</p>
+    <p id = "search-description">Check out each of our games below!</p>
     <div id="button-container">
         <button id="unfunded-btn">Show Unfunded Only</button>
         <button id="funded-btn">Show Funded Only</button>
@@ -62,3 +74,4 @@
     <script type="module" src="index.js"></script>
   </body>
 </html>
+
